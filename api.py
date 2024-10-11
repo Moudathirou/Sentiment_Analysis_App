@@ -200,7 +200,7 @@ def gene_text(entre):
     if not entre.strip():
         raise ValueError("Le texte d'entrée ne peut pas être vide.")
     
-    client = Groq(api_key="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")
+    client = Groq(api_key="")
     completion = client.chat.completions.create(
         model="llama3-8b-8192",
         messages=[
